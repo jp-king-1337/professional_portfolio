@@ -24,20 +24,20 @@ header {
 header h1 {
     display: flex;
     background-color: #87cefa;
-    color: #202020;
-    margin: 1%;
-    padding: 1% 2% 1% 5%;
+    margin: 1% 0.5%;
+    padding: 1% 2% 1% 2%;
     border-radius: 10px;
 }
 
 header h1:hover {
-    display: flex;
-    background-color: #87cefa;
-    color: #202020;
-    margin: 1%;
-    padding: 1% 2% 1% 10%;
-    border-radius: 10px;
+    padding: 1% 2% 1% 5%;
     transition: padding .3s ease-in-out;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #202020;
+
 }
 
 .nav_links {
@@ -56,15 +56,17 @@ header h1:hover {
     padding: 10px 5%;
 }
 
-.sections {
+.hero section {
     display: flex;
-    background-color: lightgray;
+    background-color: #d3d3d3;
     margin: 20px;
     padding: 20px;
 }
 
-.sections h2 {
-
+.contact {
+    display: inline-flexbox;
+    margin: 20px;
+    padding: 20px;
 }
 
 
