@@ -29,6 +29,7 @@ header {
     justify-content: space-between;
     background-color: var(--color3);
     padding: 10px 5%;
+    /* I want it to be fixed at the top of the page even when scrolling, and I know it's possible, but I couldn't figure out how to make it look nice yet. For now that's a feature I can't have. */
     /* position: fixed; */
 }
 
@@ -44,6 +45,7 @@ header h1:hover {
     transition: padding .3s ease-in-out;
 }
 
+
 header h1 a {
     text-decoration: none;
     color: var(--color1);
@@ -53,9 +55,11 @@ header nav ul li {
     /* float: right; */
     /* So this is how I learned that float is an old element that we should avoid, which JD touched on in class. It kinda broke my nav, but removing it fixed things. */
     display: inline;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* Keeping that in a comment because earlier the nav wouldn't stay place without it, but now it does. Don't want to have to hunt the solution if it breaks again. */
     font-weight: 600;
     font-size: 130%;
+    border-bottom: #393a10;
 }
 
 header nav ul li a {
@@ -65,9 +69,19 @@ header nav ul li a {
     margin-right: 5px;
 }
 
+header nav ul li a:hover {
+    text-decoration: underline;
+    padding: 10px 7px 10px;
+    border-radius: 10px;
+    transition: transform .3s;
+    background-color: var(--color4);
+    color: var(--color1);
+}
+
 .hero {
     position: relative;
     padding: 10px 5%;
+    min-width: 600px;
 }
 
 .hero section {
@@ -89,24 +103,9 @@ header nav ul li a {
     font-size: 150%;
 }
 
-#about_me {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.about_me_sub {
-    /* flex: 1 1 500px; */
-    /* max-width: 500px; */
-    margin-right: 20px;
-    align-content: flex-start;
-    justify-content: flex-start;
-}
-
 .about_me_sub p {
     padding: 0px 1em;
-    font-size: large;
-    font-weight: 500;
+    min-width: 200px;
 }
 
 .profile_picture {
@@ -115,6 +114,7 @@ header nav ul li a {
     max-width: 300px;
     min-width: 150px;
     align-self: flex-start;
+    border-radius: 50px;
 }
 
 .my_work {
