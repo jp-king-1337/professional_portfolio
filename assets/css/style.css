@@ -120,12 +120,13 @@ header nav ul li a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);/* fr is like rem and em, but specifically for grids */
     gap: 20px;
-    /* justify-items: center;
-    align-items: center; */
+    justify-items: center;
+    align-items: center;
 }
 
 .grid_item {
     text-align: center;
+    flex-basis: 50%;
 }
 
 /* I couldn't for the life of me figure this out, so I asked ChatGPT and the answer was so simple. Make it span both columns of the grid. */
