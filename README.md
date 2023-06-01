@@ -22,9 +22,8 @@ This project is to be graded as part of my participation in the Rutgers Coding B
 
 [Deployed Link](https://jp-king-1337.github.io/professional_portfolio/)
 
-![first photo](https://github.com/jp-king-1337/horiSEOn_unexpected_css_challenge/blob/main/assets/images/screenshots/Screenshot%202023-05-25%20at%203.10.52%20PM.png)
-![second photo](https://github.com/jp-king-1337/horiSEOn_unexpected_css_challenge/blob/main/assets/images/screenshots/Screenshot%202023-05-25%20at%203.11.03%20PM.png)
-![third photo](https://github.com/jp-king-1337/horiSEOn_unexpected_css_challenge/blob/main/assets/images/screenshots/Screenshot%202023-05-25%20at%203.11.10%20PM.png)
+![first photo](https://github.com/jp-king-1337/professional_portfolio/blob/main/assets/images/screenshots/Screenshot%202023-06-01%20at%201.32.13%20AM.png?raw=true)
+![second photo](https://github.com/jp-king-1337/professional_portfolio/blob/main/assets/images/screenshots/Screenshot%202023-06-01%20at%201.32.20%20AM.png?raw=true)
 
 ## Credits
 
