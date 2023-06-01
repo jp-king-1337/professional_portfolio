@@ -40,15 +40,17 @@ header h1 a {
 
 }
 
-.nav_links {
+header nav ul li {
     float: right;
     display: inline;
     justify-content: space-between;
 }
 
-.nav_links a {
+header nav ul li a {
     color: #87cefa;
     text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .hero {
@@ -59,14 +61,33 @@ header h1 a {
 .hero section {
     display: flex;
     background-color: #d3d3d3;
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
+    border-radius: 10px;
+}
+
+.hero section h2 {
+    justify-content: right;
+    border-right: 1px solid #202020;
+    padding-right: 10px;
+    max-width: 15%;
+    min-width: 15%;
+}
+
+.about_me_sub {
+    justify-content: right;
 }
 
 .contact {
-    display: inline-flexbox;
+    display: flex;
     margin: 20px;
     padding: 20px;
+    list-style: none;
+}
+
+.contact li {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
