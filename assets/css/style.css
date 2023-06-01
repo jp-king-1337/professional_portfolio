@@ -6,8 +6,9 @@
     --color3: #4a6d7c;
     --color4: #393a10;
     --color5: #475657;
+    --link_font-weight: 600;
+    --link_font-size: 130%;
 }
-
 
 /* RESETS */
 
@@ -29,6 +30,7 @@ header {
     justify-content: space-between;
     background-color: var(--color3);
     padding: 10px 5%;
+    /* I want it to be fixed at the top of the page even when scrolling, and I know it's possible, but I couldn't figure out how to make it look nice yet. For now that's a feature I can't have. */
     /* position: fixed; */
 }
 
@@ -44,6 +46,7 @@ header h1:hover {
     transition: padding .3s ease-in-out;
 }
 
+
 header h1 a {
     text-decoration: none;
     color: var(--color1);
@@ -53,9 +56,11 @@ header nav ul li {
     /* float: right; */
     /* So this is how I learned that float is an old element that we should avoid, which JD touched on in class. It kinda broke my nav, but removing it fixed things. */
     display: inline;
-    justify-content: space-between;
-    font-weight: 600;
-    font-size: 130%;
+    /* justify-content: space-between; */
+    /* Keeping that in a comment because earlier the nav wouldn't stay place without it, but now it does. Don't want to have to hunt the solution if it breaks again. */
+    font-weight: var(--link_font-weight);
+    font-size: var(--link_font-size);
+    border-bottom: #393a10;
 }
 
 header nav ul li a {
@@ -65,9 +70,18 @@ header nav ul li a {
     margin-right: 5px;
 }
 
+header nav ul li a:hover {
+    text-decoration: underline;
+    padding: 10px 7px 10px;
+    border-radius: 10px;
+    transition: transform .3s;
+    background-color: var(--color4);
+    color: var(--color1);
+}
+
 .hero {
-    position: relative;
-    padding: 10px 5%;
+    padding: 10px 2%;
+    min-width: 600px;
 }
 
 .hero section {
@@ -75,7 +89,7 @@ header nav ul li a {
     background-color: var(--color2);
     margin: 10px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 80px;
     font-size: 110%
 }
 
@@ -85,74 +99,59 @@ header nav ul li a {
     padding-right: 10px;
     max-width: 15%;
     min-width: 15%;
-    font-weight: 600;
-    font-size: 150%;
-}
-
-#about_me {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.about_me_sub {
-    flex: 1 1 500px;
-    max-width: 500px;
-    margin-right: 20px;
+    /* I tried just setting width here. It did not work and I'm not sure why since the max and min are the same. */
 }
 
 .about_me_sub p {
     padding: 0px 1em;
-    font-size: large;
-    font-weight: 500;
+    min-width: 200px;
 }
 
 .profile_picture {
-    width: 100%;
+    width: 100em;
     height: auto;
     max-width: 300px;
     min-width: 150px;
     align-self: flex-start;
+    /* Aligning to flex-start keeps it from distorting in smaller viewport. */
+    border-radius: 50px;
 }
 
-.grid_container {
+/* .my_work {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);/* fr is like rem and em, but specifically for grids */
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    overflow: hidden;
+} */
+/* fr is like rem and em, but specifically for grids */
+/* I needed this on .my_work, but I don't recall why. It doesn't do anything anymore but I'm afraid to delete it and then discover I need it. */
+
+
+/* I had the grid showing my work vertically for a bit, but I'm not sure how and was unable to get back to the version that showed it how I wanted. */
+.grid_container {
+    gap: 20px;
     align-items: center;
-}
-
-.grid_item {
     text-align: center;
-    flex-basis: 50%;
 }
 
-/* I couldn't for the life of me figure this out, so I asked ChatGPT and the answer was so simple. Make it span both columns of the grid. */
-.grid_item.big {
-    grid-column: span 2;
+.grid_container a {
+    text-decoration: none;
+    color: black;
 }
 
 .grid_item img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }
 
 /* Additional styles for first image. Placed here to ensure they ONLY affect the top item. */
 .grid_item.big img {
-    width: 100%;
+    width: 100;
     max-width: none;
 }
 
-.grid_item.big h3 {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
 .contact {
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
     margin: 20px;
     padding: 20px;
     list-style: none;
@@ -163,6 +162,16 @@ header nav ul li a {
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
-    font-weight: 600;
-    font-size: 130%;
+    font-weight: var(--link_font-weight);
+    font-size: var(--link_font-size);
+}
+
+/* I kept this separate from the header links because I may want them to be different later. */
+.contact li a:hover {
+    text-decoration: underline;
+    padding: 10px 7px 10px;
+    border-radius: 10px;
+    transition: transform .3s;
+    background-color: var(--color4);
+    color: var(--color1);
 }
