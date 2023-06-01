@@ -93,13 +93,19 @@ header nav ul li a {
     justify-content: right;
 }
 
+.my_work {
+
+}
+
 .grid_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .grid_item {
     padding: 20px;
+    background-color: #eaeaea;
 }
 
 .contact {
@@ -118,5 +124,3 @@ header nav ul li a {
     font-weight: 600;
     font-size: 130%;
 }
-
-
