@@ -6,8 +6,9 @@
     --color3: #4a6d7c;
     --color4: #393a10;
     --color5: #475657;
+    --link_font-weight: 600;
+    --link_font-size: 130%;
 }
-
 
 /* RESETS */
 
@@ -57,8 +58,8 @@ header nav ul li {
     display: inline;
     /* justify-content: space-between; */
     /* Keeping that in a comment because earlier the nav wouldn't stay place without it, but now it does. Don't want to have to hunt the solution if it breaks again. */
-    font-weight: 600;
-    font-size: 130%;
+    font-weight: var(--link_font-weight);
+    font-size: var(--link_font-size);
     border-bottom: #393a10;
 }
 
@@ -79,8 +80,7 @@ header nav ul li a:hover {
 }
 
 .hero {
-    position: relative;
-    padding: 10px 5%;
+    padding: 10px 2%;
     min-width: 600px;
 }
 
@@ -89,7 +89,7 @@ header nav ul li a:hover {
     background-color: var(--color2);
     margin: 10px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 80px;
     font-size: 110%
 }
 
@@ -99,8 +99,7 @@ header nav ul li a:hover {
     padding-right: 10px;
     max-width: 15%;
     min-width: 15%;
-    font-weight: 600;
-    font-size: 150%;
+    /* I tried just setting width here. It did not work and I'm not sure why since the max and min are the same. */
 }
 
 .about_me_sub p {
@@ -109,34 +108,30 @@ header nav ul li a:hover {
 }
 
 .profile_picture {
-    width: 100%;
+    width: 100em;
     height: auto;
     max-width: 300px;
     min-width: 150px;
     align-self: flex-start;
+    /* Aligning to flex-start keeps it from distorting in smaller viewport. */
     border-radius: 50px;
 }
 
-.my_work {
+/* .my_work {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* fr is like rem and em, but specifically for grids */
     justify-items: center;
     overflow: hidden;
-}
+} */
+/* fr is like rem and em, but specifically for grids */
+/* I needed this on .my_work, but I don't recall why. It doesn't do anything anymore but I'm afraid to delete it and then discover I need it. */
 
 
 /* I had the grid showing my work vertically for a bit, but I'm not sure how and was unable to get back to the version that showed it how I wanted. */
 .grid_container {
     gap: 20px;
-    justify-items: center;
     align-items: center;
     text-align: center;
-}
-
-/* I couldn't for the life of me figure this out, so I asked ChatGPT and the answer was so simple. Make it span both columns of the grid. */
-.grid_item.big {
-    grid-column: span 2;
 }
 
 .grid_item img {
@@ -151,8 +146,7 @@ header nav ul li a:hover {
 }
 
 .contact {
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
     margin: 20px;
     padding: 20px;
     list-style: none;
@@ -163,6 +157,15 @@ header nav ul li a:hover {
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
-    font-weight: 600;
-    font-size: 130%;
+    font-weight: var(--link_font-weight);
+    font-size: var(--link_font-size);
+}
+
+.contact li a:hover {
+    text-decoration: underline;
+    padding: 10px 7px 10px;
+    border-radius: 10px;
+    transition: transform .3s;
+    background-color: var(--color4);
+    color: var(--color1);
 }
