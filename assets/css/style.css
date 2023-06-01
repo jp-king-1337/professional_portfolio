@@ -134,6 +134,11 @@ header nav ul li a:hover {
     text-align: center;
 }
 
+.grid_container a {
+    text-decoration: none;
+    color: black;
+}
+
 .grid_item img {
     max-width: 90%;
     height: auto;
@@ -161,6 +166,7 @@ header nav ul li a:hover {
     font-size: var(--link_font-size);
 }
 
+/* I kept this separate from the header links because I may want them to be different later. */
 .contact li a:hover {
     text-decoration: underline;
     padding: 10px 7px 10px;
