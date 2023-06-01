@@ -1,29 +1,41 @@
+/* VARIABLES */
+
+:root {
+    --color1: #d1d5de;
+    --color2: #b7b6c2;
+    --color3: #837569;
+    --color4: #657153;
+    --color5: #8aaa79;
+}
+
+
 /* RESETS */
 
 * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    color: color3
 }
 
 /* GLOBAL STYLES/CLASSES */
 
 body {
-    background-color: #f0ffff;
+    background-color: var(--color1);
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #202020;
+    background-color: var(--color4);
     padding: 10px 5%;
     /* position: fixed; */
 }
 
 header h1 {
     display: flex;
-    background-color: #87cefa;
+    background-color: var(--color3);
     margin: 1% 0.5%;
     padding: 1% 2% 1% 2%;
     border-radius: 10px;
@@ -36,18 +48,19 @@ header h1:hover {
 
 header h1 a {
     text-decoration: none;
-    color: #202020;
-
+    color: var(--color1);
+    font-weight: 600;
 }
 
 header nav ul li {
     float: right;
     display: inline;
     justify-content: space-between;
+    font-size: 130%;
 }
 
 header nav ul li a {
-    color: #87cefa;
+    color: var(--color1);
     text-decoration: none;
     margin-left: 5px;
     margin-right: 5px;
@@ -60,7 +73,7 @@ header nav ul li a {
 
 .hero section {
     display: flex;
-    background-color: #d3d3d3;
+    background-color: var(--color5);
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
@@ -68,7 +81,7 @@ header nav ul li a {
 
 .hero section h2 {
     justify-content: right;
-    border-right: 1px solid #202020;
+    border-right: 1px solid var(--color4);
     padding-right: 10px;
     max-width: 15%;
     min-width: 15%;
