@@ -91,15 +91,16 @@ header nav ul li a {
 
 #about_me {
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
 }
 
 .about_me_sub {
-    flex: 1 1 500px;
-    max-width: 500px;
+    /* flex: 1 1 500px; */
+    /* max-width: 500px; */
     margin-right: 20px;
+    align-content: flex-start;
+    justify-content: flex-start;
 }
 
 .about_me_sub p {
@@ -116,17 +117,21 @@ header nav ul li a {
     align-self: flex-start;
 }
 
-.grid_container {
+.my_work {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);/* fr is like rem and em, but specifically for grids */
+    grid-template-columns: repeat(2, 1fr);
+    /* fr is like rem and em, but specifically for grids */
+    justify-items: center;
+    overflow: hidden;
+}
+
+
+/* I had the grid showing my work vertically for a bit, but I'm not sure how and was unable to get back to the version that showed it how I wanted. */
+.grid_container {
     gap: 20px;
     justify-items: center;
     align-items: center;
-}
-
-.grid_item {
     text-align: center;
-    flex-basis: 50%;
 }
 
 /* I couldn't for the life of me figure this out, so I asked ChatGPT and the answer was so simple. Make it span both columns of the grid. */
@@ -135,19 +140,14 @@ header nav ul li a {
 }
 
 .grid_item img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }
 
 /* Additional styles for first image. Placed here to ensure they ONLY affect the top item. */
 .grid_item.big img {
-    width: 100%;
+    width: 100;
     max-width: none;
-}
-
-.grid_item.big h3 {
-    font-size: 1.2rem;
-    margin-top: 10px;
 }
 
 .contact {
