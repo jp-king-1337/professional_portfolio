@@ -10,6 +10,7 @@
     --link_font-size: 130%;
 }
 
+
 /* RESETS */
 
 * {
@@ -18,11 +19,17 @@
     font-family: sans-serif;
 }
 
+
 /* GLOBAL STYLES/CLASSES */
 
 body {
     background-color: var(--color1);
 }
+
+
+
+
+/* CUSTOM STYLES */
 
 header {
     display: flex;
