@@ -32,9 +32,9 @@
     <main class="hero">
         <section id="about_me">
             <h2>About Me</h2>
-            <section class="about_me_sub">
+            <section class="about_me_sub row justify-between">
                 <!-- I hate writing bios. Absolutely despise it. I do not like talking about myself, trying to sell myself, anything like that. Now I know that ChatGPT can write one for me as long as I feed it the relevant information, and that's magnificent to learn. Had to make some edits, but ChatGPT was super helpful for the structure. -->
-                <p>
+                <p column>
                     JP King is a motivated individual with a passion for both the culinary arts and web development.
                     Originally from Lancaster County, Pennsylvania, he attended Lycoming College, where he majored in
                     German and minored in theatre technology. After graduating in 2019, JP embarked on a career in the
@@ -53,7 +53,7 @@
 
                 <!-- Neither path nor relative path would not load the photo, I don't know why. But pulling my picture from the assets folder through github worked. -->
                 <img src="https://raw.githubusercontent.com/jp-king-1337/professional_portfolio/main/assets/images/DSC_0490.JPG"
-                    alt="picture of me" class="profile_picture" />
+                    alt="picture of me" class="profile_picture column" />
 
             </section>
         </section>
@@ -61,35 +61,40 @@
         <section id="my_work" class="my_work">
             <h2>My Work</h2>
             <section class="grid_container">
-                <a href="https://www.google.com" target="_blank" class="grid_item.big">
+                <section class="column_left">
+                    <a href="https://www.google.com" target="_blank" class="grid_item.big">
+                        
+                        <img src="https://placehold.co/200x200" alt="image 1">
+                        <h3>Sample 1</h3>
+                    </a>
+                    <a href="https://www.google.com" target="_blank" class="grid_item">
 
-                    <img src="https://placehold.co/200x200" alt="image 1">
-                    <h3>Sample 1</h3>
-                </a>
-                <a href="https://www.google.com" target="_blank" class="grid_item">
-                    <img src="https://placehold.co/200x200" alt="image 2">
-                    <h3>Sample 2</h3>
-                </a>
-                <a href="https://www.google.com" target="_blank" class="grid_item">
+                        <img src="https://placehold.co/200x200" alt="image 2">
+                        <h3>Sample 2</h3>
+                    </a>
+                    <a href="https://www.google.com" target="_blank" class="grid_item">
 
-                    <img src="https://placehold.co/200x200" alt="image 3">
-                    <h3>Sample 3</h3>
-                </a>
-                <a href="https://www.google.com" target="_blank" class="grid_item">
+                        <img src="https://placehold.co/200x200" alt="image 3">
+                        <h3>Sample 3</h3>
+                    </a>
+                </section>
+                <section class="column_right">
+                    <a href="https://www.google.com" target="_blank" class="grid_item">
 
-                    <img src="https://placehold.co/200x200" alt="image 4">
-                    <h3>Sample 4</h3>
-                </a>
-                <a href="https://www.google.com" target="_blank" class="grid_item">
+                        <img src="https://placehold.co/200x200" alt="image 4">
+                        <h3>Sample 4</h3>
+                    </a>
+                    <a href="https://www.google.com" target="_blank" class="grid_item">
 
-                    <img src="https://placehold.co/200x200" alt="image 5">
-                    <h3>Sample 5</h3>
-                </a>
-                <a href="https://www.google.com" target="_blank" class="grid_item">
+                        <img src="https://placehold.co/200x200" alt="image 5">
+                        <h3>Sample 5</h3>
+                    </a>
+                    <a href="https://www.google.com" target="_blank" class="grid_item">
 
-                    <img src="https://placehold.co/200x200" alt="image 6">
-                    <h3>Sample 6</h3>
-                </a>
+                        <img src="https://placehold.co/200x200" alt="image 6">
+                        <h3>Sample 6</h3>
+                    </a>
+                </section>
             </section>
         </section>
 
@@ -112,6 +117,11 @@
             </ul>
         </section>
     </main>
+
+    <footer class="row justify-between">
+        <p>&copy;2023</p>
+        <p>JP King</p>
+    </footer>
 
 </body>
 

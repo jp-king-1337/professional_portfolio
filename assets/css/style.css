@@ -16,9 +16,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
 
 /* GLOBAL STYLES/CLASSES */
 
@@ -26,8 +30,22 @@ body {
     background-color: var(--color1);
 }
 
+.row, .column {
+    display: flex;
 
+}
 
+.column {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
 
 /* CUSTOM STYLES */
 
@@ -89,6 +107,7 @@ header nav ul li a:hover {
 .hero {
     padding: 10px 2%;
     min-width: 600px;
+    flex: 1;
 }
 
 .hero section {
@@ -98,6 +117,7 @@ header nav ul li a:hover {
     padding: 20px;
     border-radius: 80px;
     font-size: 110%
+    
 }
 
 .hero section h2 {
@@ -136,25 +156,31 @@ header nav ul li a:hover {
 
 /* I had the grid showing my work vertically for a bit, but I'm not sure how and was unable to get back to the version that showed it how I wanted. */
 .grid_container {
+    display: grid;
     gap: 20px;
+    grid-template-rows: auto repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: center;
 }
 
 .grid_container a {
+    width: 100%;
     text-decoration: none;
     color: black;
 }
 
 .grid_item img {
-    max-width: 90%;
+    max-width: 80%;
     height: auto;
 }
 
 /* Additional styles for first image. Placed here to ensure they ONLY affect the top item. */
 .grid_item.big img {
-    width: 100;
-    max-width: none;
+    /* width: 100;
+    max-width: none; */
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
 }
 
 .contact {
