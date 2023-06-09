@@ -132,15 +132,9 @@ header nav ul li a:hover {
     display:block;
 }
 
-.about_me_sub p {
+.about_paragraph {
     padding: 0px 1em;
     min-width: 200px;
-}
-
-.about_paragraph {
-    /* flex: 2 1 300px; */
-    /* 250px is the basis, what it will try to be by default */
-    /* first is growth, second is shrink */
 }
 
 .profile_picture_container {
