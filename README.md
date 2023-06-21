@@ -21,7 +21,7 @@ git clone git@github.com:jp-king-1337/professional_portfolio.git
 
 ## Usage
 
-This project is to be graded as part of my participation in the Rutgers Coding Bootcamp.
+This is my portfolio website, originally created to be graded as part of my participation in the Rutgers Coding Bootcamp. Now, it serves as a place to show off the work I've done in the class and will be updated to reflect the work I do in the future.
 
 [Deployed Link](https://jp-king-1337.github.io/professional_portfolio/)
 
