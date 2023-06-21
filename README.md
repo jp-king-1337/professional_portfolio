@@ -2,7 +2,8 @@
 
 ## Description
 
-This is my first portfolio website, made from scratch.
+This is my first portfolio website, made from scratch and updated to include the first project I've worked on with a group in class.
+
 
 ## Table of Contents
 
@@ -11,10 +12,12 @@ This is my first portfolio website, made from scratch.
 - [Credits](#credits)
 - [License](#license)
 
+
 ## Installation
 
 Use SSH to clone the project from github, with this:
 git clone git@github.com:jp-king-1337/professional_portfolio.git
+
 
 ## Usage
 
@@ -23,11 +26,14 @@ This project is to be graded as part of my participation in the Rutgers Coding B
 [Deployed Link](https://jp-king-1337.github.io/professional_portfolio/)
 
 ![first photo](assets/images/screenshots/screenshot_1Portfolio_v2.png)
-![second photo](https://github.com/jp-king-1337/professional_portfolio/blob/main/assets/images/screenshots/Screenshot%202023-06-01%20at%201.32.20%20AM.png?raw=true)
+![second photo](assets/images/screenshots/screenshot_2Portfolio_v2.png)
+![third photo](assets/images/screenshots/screenshot_3Portfolio_v2.png)
+
 
 ## Credits
 
-I used notes from class as much as possible, but also asked ChatGPT questions, and noted those interactions within my files.
+I previously asked questions of ChatGPT when building this site almost a month ago. For the changes I made tonight, I needed no assistance.
+
 
 ## License
 
@@ -53,17 +59,21 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+
 ## Badges
 
 N/A
+
 
 ## Features
 
 N/A
 
+
 ## How to Contribute
 
 N/A
+
 
 ## Tests
 
