@@ -125,6 +125,7 @@ header nav ul li a:hover {
 
 
 /* ABOUT */
+
 .about_me_sub {
     display:block;
 }
@@ -155,6 +156,7 @@ header nav ul li a:hover {
 
 
 /* WORK */
+
 .work_flex {
     display: flex;
     flex-direction: column;
@@ -196,6 +198,7 @@ header nav ul li a:hover {
 
 
 /* CONTACT */
+
 .contact {
     display: inline-flex;
     margin: 20px;
@@ -224,6 +227,7 @@ header nav ul li a:hover {
 
 
 /* FOOTER */
+
 #footer {
     text-align: center;
     padding: 2px 0px 10px 0px;
