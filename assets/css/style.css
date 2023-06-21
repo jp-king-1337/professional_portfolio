@@ -24,6 +24,7 @@ html, body {
     height: 100%;
 }
 
+
 /* GLOBAL STYLES/CLASSES */
 
 body {
@@ -32,7 +33,6 @@ body {
 
 .row, .column {
     display: flex;
-    
 }
 
 .column {
@@ -46,6 +46,7 @@ body {
 .align-center {
     align-items: center;
 }
+
 
 /* CUSTOM STYLES */
 
@@ -71,15 +72,12 @@ header h1:hover {
     transition: padding .3s ease-in-out;
 }
 
-
 header h1 a {
     text-decoration: none;
     color: var(--color1);
 }
 
 header nav ul li {
-    /* float: right; */
-    /* So this is how I learned that float is an old element that we should avoid, which JD touched on in class. It kinda broke my nav, but removing it fixed things. */
     display: inline;
     /* justify-content: space-between; */
     /* Keeping that in a comment because earlier the nav wouldn't stay place without it, but now it does. Don't want to have to hunt the solution if it breaks again. */
@@ -123,9 +121,6 @@ header nav ul li a:hover {
     border-right: 1px solid var(--color4);
     padding-right: 10px;
     flex: 0 0 125px;
-    /* max-width: 15%;
-    min-width: 15%; */
-    /* I tried just setting width here. It did not work and I'm not sure why since the max and min are the same. */
 }
 
 
@@ -151,13 +146,12 @@ header nav ul li a:hover {
 }
 
 .profile_picture {
-    width: 100em;
-    height: auto;
     max-width: 100%;
     /* min-width: 150px; */
     align-self: flex-start;
     /* Aligning to flex-start keeps it from distorting in smaller viewport. */
     border-radius: 10px;
+}
 
 
 /* WORK */
