@@ -22,7 +22,7 @@ This project is to be graded as part of my participation in the Rutgers Coding B
 
 [Deployed Link](https://jp-king-1337.github.io/professional_portfolio/)
 
-![first photo](https://github.com/jp-king-1337/professional_portfolio/blob/main/assets/images/screenshots/Screenshot%202023-06-01%20at%201.32.13%20AM.png?raw=true)
+![first photo](assets/images/screenshots/screenshot_1Portfolio_v2.png)
 ![second photo](https://github.com/jp-king-1337/professional_portfolio/blob/main/assets/images/screenshots/Screenshot%202023-06-01%20at%201.32.20%20AM.png?raw=true)
 
 ## Credits
