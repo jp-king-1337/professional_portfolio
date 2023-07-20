@@ -1,5 +1,4 @@
 /* VARIABLES */
-
 :root {
     --color1: #c6c5b9;
     --color2: #62929e;
@@ -12,7 +11,6 @@
 
 
 /* RESETS */
-
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +24,6 @@ html, body {
 
 
 /* GLOBAL STYLES/CLASSES */
-
 body {
     background-color: var(--color1);
 }
@@ -49,7 +46,6 @@ body {
 
 
 /* CUSTOM STYLES */
-
 header {
     display: flex;
     align-items: center;
@@ -79,8 +75,6 @@ header h1 a {
 
 header nav ul li {
     display: inline;
-    /* justify-content: space-between; */
-    /* Keeping that in a comment because earlier the nav wouldn't stay place without it, but now it does. Don't want to have to hunt the solution if it breaks again. */
     font-weight: var(--link_font-weight);
     font-size: var(--link_font-size);
     border-bottom: #393a10;
@@ -125,7 +119,6 @@ header nav ul li a:hover {
 
 
 /* ABOUT */
-
 .about_me_sub {
     display:block;
 }
@@ -136,7 +129,6 @@ header nav ul li a:hover {
 }
 
 .profile_picture_container {
-    /* flex: 1 2 250px; */
     height: fit-content;
     float: right;
     width: 30%;
@@ -148,15 +140,12 @@ header nav ul li a:hover {
 
 .profile_picture {
     max-width: 100%;
-    /* min-width: 150px; */
     align-self: flex-start;
-    /* Aligning to flex-start keeps it from distorting in smaller viewport. */
     border-radius: 10px;
 }
 
 
 /* WORK */
-
 .work_flex {
     display: flex;
     flex-direction: column;
@@ -198,7 +187,6 @@ header nav ul li a:hover {
 
 
 /* CONTACT */
-
 .contact {
     display: inline-flex;
     margin: 20px;
@@ -215,7 +203,6 @@ header nav ul li a:hover {
     font-size: var(--link_font-size);
 }
 
-/* I kept this separate from the header links because I may want them to be different later. */
 .contact li a:hover {
     text-decoration: underline;
     padding: 10px 7px 10px;
@@ -227,7 +214,6 @@ header nav ul li a:hover {
 
 
 /* FOOTER */
-
 #footer {
     text-align: center;
     padding: 2px 0px 10px 0px;
